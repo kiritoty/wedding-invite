@@ -25,7 +25,7 @@ const storyData = [
     id: 3,
     title: "携手",
     eng: "The Engagement",
-    desc: "此后长路，携手同学",
+    desc: "此后长路，携手同行。",
     image: Engage,
     pos: "left"
   },
