@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 定义你的婚礼主题色 */
+  --color-wedding-gold: #D4AF37;
+  --color-wedding-pink: #FFF5F5;
+  --color-soft-rose: #F43F5E;
+  /* 默认：优雅的英文字体 */
+  --font-serif-en: "Cormorant Garamond", serif;
+  /* 专属：细腻的中文字体 */
+  --font-serif-zh: "Noto Serif SC", "Songti SC", serif;
+}
+
+/* 移动端基础优化 */
+@layer base {
+  body {
+    @apply bg-[var(--color-wedding-pink)] text-slate-800 overflow-x-hidden;
+    /* 解决移动端点击高亮问题 */
+    -webkit-tap-highlight-color: transparent;
+
+    font-family: var(--font-serif-en);
+    @apply bg-[#f8f7f3] text-slate-700 antialiased;
+  }
+}
+
+.font-chinese {
+  font-family: var(--font-serif-zh);
+}
